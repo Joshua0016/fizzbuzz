@@ -16,6 +16,13 @@ for(let i = 0; i < input; i++){
     increase += 1;
 }
 
+
+game();
+
+
+
+function game(){
+
 let results = [];
 let counterTwo = 0;
 console.log("----GAME START----\n");
@@ -28,13 +35,13 @@ for (let i of arrayNumbers){
     switch(true){
           //El usuario pierde si no reemplaza las palabras por los númneros correspondientes
           case (parseInt(input) % 3 === 0 && parseInt(input) % 5 === 0):
-            console.log("Game over 0");
+            console.log("Game over");
             break outerLoop;
         case (parseInt(input) % 3 === 0):
-            console.log("Game over 1");
+            console.log("Game over");
             break outerLoop;
         case (parseInt(input) % 5 === 0):
-            console.log("Game over 2");
+            console.log("Game over");
             break outerLoop;
         //Asegurando cada caso "fizzbuzz, fizz y buzz"
         case (i % 3 === 0 && i % 5 === 0 && results[counterTwo] === "fizzbuzz"):
@@ -48,7 +55,7 @@ for (let i of arrayNumbers){
             break;
                //Asegurando que el usuario siga la sencuencia de números correctamente
         case (parseInt(input) != i):
-            console.log("Game over 3")
+            console.log("Game over")
             break outerLoop;
           
         default:
@@ -59,13 +66,9 @@ for (let i of arrayNumbers){
 
 }
 
-
 console.log("\nResultados\n");
 for (let i of results){
     process.stdout.write(" "+i +"");
 }
-
-function game(){
-    
     
 }
