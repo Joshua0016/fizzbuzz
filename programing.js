@@ -4,8 +4,7 @@ console.log("2. Mientras el jugador esté contando debe de sustituir el número 
 console.log("3. Si el número es divisible entre 5 debe de sustituirlo por la palabra 'buzz'");
 console.log("4. Si el número es divisible entre 3 y 5 el jugador debe de escribir 'fizzbuzz'")
 
-const prompt = require('prompt-sync')();
-let increase = 1;
+
 
 process.stdout.write("\nIngresa hasta qué cantidad desea contar :\n");
 
